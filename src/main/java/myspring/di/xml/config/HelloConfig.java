@@ -33,6 +33,7 @@ public class HelloConfig {
 		Hello hello = new Hello();
 		// "자바컨피그"
 		hello.setName(environment.getProperty("myName3"));
+		hello.setPrinter(stringPrinter());
 		return hello;
 	}
 }
